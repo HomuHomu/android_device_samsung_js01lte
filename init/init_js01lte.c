@@ -54,43 +54,12 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
     property_get("ro.bootloader", bootloader);
 
-    if (strstr(bootloader, "N900W8")) {
-        /* hltecan */
-        property_set("ro.build.fingerprint", "samsung/hltevl/hltecan:4.3/JSS15J/N900W8VLUBMJ4:user/release-keys");
-        property_set("ro.build.description", "hltevl-user 4.3 JSS15J N900W8VLUBMJ4 release-keys");
-        property_set("ro.product.model", "SM-N900W8");
-        property_set("ro.product.device", "hltecan");
-        property_set("ro.telephony.ril.v3", "newDialCode");
-    } else if (strstr(bootloader, "N900P")) {
-        /* hltespr */
-        property_set("ro.build.fingerprint", "samsung/hltespr/hltespr:4.3/JSS15J/N900PVPUBMJ4:user/release-keys");
-        property_set("ro.build.description", "hltespr-user 4.3 JSS15J N900PVPUBMJ4 release-keys");
-        property_set("ro.product.model", "SM-N900P");
-        property_set("ro.product.device", "hltespr");
-        property_set("ro.telephony.ril.v3", "newDriverCallU,newDialCode");
-    } else if (strstr(bootloader, "N900T")) {
-        /* hltetmo */
-        property_set("ro.build.fingerprint", "samsung/hltetmo/hltetmo:4.3/JSS15J/N900TUVUBMI7:user/release-keys");
-        property_set("ro.build.description", "hltetmo-user 4.3 JSS15J N900TUVUBMI7 release-keys");
-        property_set("ro.product.model", "SM-N900T");
-        property_set("ro.product.device", "hltetmo");
-        property_set("ro.telephony.ril.v3", "newDialCode");
-    } else if (strstr(bootloader, "N900V")) {
-        /* hltevzw */
-        property_set("ro.build.fingerprint", "Verizon/hltevzw/hltevzw:4.3/JSS15J/N900VOYUBMJ3:user/release-keys");
-        property_set("ro.build.description", "hltevzw-user 4.3 JSS15J N900VOYUBMJ3 release-keys");
-        property_set("ro.product.model", "SM-N900V");
-        property_set("ro.product.device", "hltevzw");
-        property_set("ro.telephony.ril.v3", "newDriverCallU,newDialCode");
-        property_set("ro.telephony.default_cdma_sub", "0");
-        property_set("ro.cdma.home.operator.alpha", "Verizon");
-        property_set("ro.cdma.home.operator.numeric", "311480");
-    } else {
-        /* hltexx */
-        property_set("ro.build.fingerprint", "samsung/hltexx/hlte:4.3/JSS15J/N9005XXUBMH1:user/release-keys");
-        property_set("ro.build.description", "hltexx-user 4.3 JSS15J N9005XXUBMH1 release-keys");
-        property_set("ro.product.model", "SM-N9005");
-        property_set("ro.product.device", "hltexx");
+    if (strstr(bootloader, "SC02F")) {
+        /* hltejs01dcm */
+        property_set("ro.build.fingerprint", "samsung/SC-02F/SC-02F:4.3/JSS15J/SC02FOMUCNC3:user/release-keys");
+        property_set("ro.build.description", "hltejs01dcm-user 4.3 JSS15J SC02FOMUCNC3 release-keys");
+        property_set("ro.product.model", "SC-02F");
+        property_set("ro.product.device", "SC-02F");
         property_set("ro.telephony.ril.v3", "newDialCode");
     }
     property_get("ro.product.device", device);
