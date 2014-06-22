@@ -93,6 +93,9 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+PRODUCT_COPY_FILES += \
+    device/samsung/js01lte/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
