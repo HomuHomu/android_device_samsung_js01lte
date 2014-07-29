@@ -108,7 +108,7 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 # Assert
 TARGET_OTA_ASSERT_DEVICE := js01ltexx,js01ltedcm,js01lte
 
-TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_js01ltedcm_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_js01lte_dcm_defconfig
 
 # PowerHAL
 TARGET_POWERHAL_VARIANT := qcom
