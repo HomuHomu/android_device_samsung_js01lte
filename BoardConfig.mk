@@ -17,7 +17,7 @@
 
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/js01lte/include
 
-TARGET_OTA_ASSERT_DEVICE := js01ltexx,js01ltespr,js01ltetmo,SM-N900T,js01ltecan,js01lteatt,js01ltevzw,js01lteusc,js01lte
+TARGET_OTA_ASSERT_DEVICE := js01ltexx,js01lte,js01ltedcm
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
